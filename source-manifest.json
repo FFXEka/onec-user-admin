@@ -1,0 +1,12 @@
+{
+  "version": "2.07",
+  "originalBinary": "АдминистрированиеИАудитПользователей_2_07.epf",
+  "binarySHA256": "8e106bc37534fdcc668cf12acbac65ef553b3cf32821e82f035c6a2d7e474878",
+  "sourceSHA256": {
+    "src/АдминистрированиеИАудитПользователей/Ext/ObjectModule.bsl": "2f0fc56022087af91d1fb58075af1f230529987240d17e6a337850fff1efd5eb",
+    "src/АдминистрированиеИАудитПользователей/Forms/Форма/Ext/Form/Module.bsl": "eaa24e6a7120d5c9cecab8bb959778111b979816a78845c38269f85d935e64d2",
+    "src/АдминистрированиеИАудитПользователей/Forms/Форма/Ext/Form.xml": "742e3d13a9a2e769f2ca9c2a12f25ed38d45ee30002809b174bc3df3590650d8",
+    "src/АдминистрированиеИАудитПользователей/Forms/Форма.xml": "cdc23925cb0ffc13b5a82c854ecfc7212056c386093d0ae64b1a0093856cef42",
+    "src/АдминистрированиеИАудитПользователей.xml": "a12b4103b2e6cfec6d316abb2c204c7fff69cacdd6a42ba27cb0a39e5b397e40"
+  }
+}

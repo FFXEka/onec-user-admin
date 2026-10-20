@@ -1,0 +1,3 @@
+* -text
+*.bsl linguist-language=1C-Enterprise
+*.xml linguist-detectable=false

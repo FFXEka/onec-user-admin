@@ -1,0 +1,5 @@
+*.log
+*.1CD
+*.pfl
+*.tmp
+build/
