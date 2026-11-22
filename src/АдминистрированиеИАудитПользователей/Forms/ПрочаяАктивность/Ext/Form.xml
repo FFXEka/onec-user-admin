@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Прочая активность</v8:content></v8:item></Title>
+	<Width>63</Width>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"><Autofill>false</Autofill></AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КоличествоДней" id="1">
+			<DataPath>КоличествоДней</DataPath>
+			<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Количество дней</v8:content></v8:item></Title>
+			<Width>5</Width>
+			<ContextMenu name="КоличествоДнейКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КоличествоДнейРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<LabelDecoration name="ЧтоСчитается" id="4">
+			<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Укажите количество последних дней, включая сегодня, за которые просчитаются начала сеансов HTTP, SOAP и COM для пользователей.</v8:content></v8:item></Title>
+			<ContextMenu name="ЧтоСчитаетсяКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЧтоСчитаетсяРасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<LabelDecoration name="ГдеСмотретьРезультат" id="7">
+			<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Итог появится в колонке «Прочая активность» в списках аудита.</v8:content></v8:item></Title>
+			<ContextMenu name="ГдеСмотретьРезультатКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ГдеСмотретьРезультатРасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<UsualGroup name="Кнопки" id="10">
+			<Group>Horizontal</Group>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КнопкиРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Button name="Рассчитать" id="12">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Рассчитать</CommandName>
+					<ExtendedTooltip name="РассчитатьРасширеннаяПодсказка" id="13"/>
+				</Button>
+				<Button name="Отменить" id="14">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Отменить</CommandName>
+					<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="15"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КоличествоДней" id="1">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Рассчитать" id="1"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Рассчитать</v8:content></v8:item></Title><Action>Рассчитать</Action></Command>
+		<Command name="Отменить" id="2"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Отмена</v8:content></v8:item></Title><Action>Отменить</Action></Command>
+	</Commands>
+</Form>

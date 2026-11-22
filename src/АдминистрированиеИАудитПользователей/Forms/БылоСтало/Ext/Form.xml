@@ -1,0 +1,237 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+  <Title>
+    <v8:item>
+      <v8:lang>ru</v8:lang>
+      <v8:content>Было/Стало</v8:content>
+    </v8:item>
+  </Title>
+  <Width>112</Width>
+  <Height>30</Height>
+  <AutoTitle>false</AutoTitle>
+  <WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+  <CommandBarLocation>None</CommandBarLocation>
+  <AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+    <Autofill>false</Autofill>
+  </AutoCommandBar>
+  <Events>
+    <Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+  </Events>
+  <ChildItems>
+    <LabelDecoration name="Было" id="1">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Было</v8:content>
+        </v8:item>
+      </Title>
+      <Height>1</Height>
+      <MaxHeight>2</MaxHeight>
+      <AutoMaxHeight>true</AutoMaxHeight>
+      <HorizontalStretch>true</HorizontalStretch>
+      <VerticalStretch>false</VerticalStretch>
+    <AutoMaxWidth>false</AutoMaxWidth></LabelDecoration>
+    <LabelDecoration name="Стало" id="2">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Стало</v8:content>
+        </v8:item>
+      </Title>
+      <Height>1</Height>
+      <MaxHeight>2</MaxHeight>
+      <AutoMaxHeight>true</AutoMaxHeight>
+      <HorizontalStretch>true</HorizontalStretch>
+      <VerticalStretch>false</VerticalStretch>
+    <AutoMaxWidth>false</AutoMaxWidth></LabelDecoration>
+    <LabelDecoration name="Сводка" id="3">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сводка</v8:content>
+        </v8:item>
+      </Title>
+      <Height>1</Height>
+      <MaxHeight>2</MaxHeight>
+      <AutoMaxHeight>true</AutoMaxHeight>
+      <HorizontalStretch>true</HorizontalStretch>
+      <VerticalStretch>false</VerticalStretch>
+    <AutoMaxWidth>false</AutoMaxWidth></LabelDecoration>
+    <UsualGroup name="ПанельОтбора" id="4">
+      <ShowTitle>false</ShowTitle>
+      <Group>Horizontal</Group>
+      <HorizontalStretch>true</HorizontalStretch>
+      <ChildItems>
+        <InputField name="ВидИзменений" id="5">
+          <DataPath>ВидИзменений</DataPath>
+          <TitleLocation>None</TitleLocation>
+          <Width>18</Width>
+          <HorizontalStretch>false</HorizontalStretch>
+          <DropListButton>true</DropListButton>
+          <ClearButton>false</ClearButton>
+          <Events>
+            <Event name="OnChange">ВидИзмененийПриИзменении</Event>
+          </Events>
+        </InputField>
+        <InputField name="Поиск" id="6">
+          <DataPath>Поиск</DataPath>
+          <TitleLocation>None</TitleLocation>
+          <Width>28</Width>
+          <HorizontalStretch>true</HorizontalStretch>
+          <ClearButton>true</ClearButton>
+          <InputHint><v8:item><v8:lang>ru</v8:lang><v8:content>Поиск по имени или логину</v8:content></v8:item></InputHint>
+          <Events>
+            <Event name="OnChange">ПоискПриИзменении</Event>
+          </Events>
+        </InputField>
+        <Button name="СохранитьСравнение" id="8">
+          <Type>UsualButton</Type>
+          <CommandName>Form.Command.СохранитьСравнение</CommandName>
+          <HorizontalStretch>false</HorizontalStretch>
+        </Button>
+      </ChildItems>
+    </UsualGroup>
+    <UsualGroup name="ОбластьСравнения" id="9">
+      <ShowTitle>false</ShowTitle>
+      <Group>Horizontal</Group>
+      <HorizontalStretch>true</HorizontalStretch>
+      <VerticalStretch>true</VerticalStretch>
+      <ChildItems>
+        <Table name="Изменения" id="10">
+          <DataPath>Изменения</DataPath>
+          <TitleLocation>None</TitleLocation>
+          <Width>42</Width>
+          <Height>20</Height>
+          <HorizontalStretch>true</HorizontalStretch>
+          <VerticalStretch>true</VerticalStretch>
+          <ReadOnly>true</ReadOnly>
+          <CommandBarLocation>None</CommandBarLocation>
+          <AutoCommandBar name="ИзмененияКоманднаяПанель" id="11">
+            <Autofill>false</Autofill>
+          </AutoCommandBar>
+          <Events>
+            <Event name="OnActivateRow">ИзмененияПриАктивизацииСтроки</Event>
+          </Events>
+          <ChildItems>
+            <InputField name="ИзмененияПолноеИмя" id="12">
+              <DataPath>Изменения.ПолноеИмя</DataPath>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Пользователь</v8:content>
+                </v8:item>
+              </Title>
+              <Width>24</Width>
+              <ReadOnly>true</ReadOnly>
+            </InputField>
+            <InputField name="ИзмененияИмя" id="13">
+              <DataPath>Изменения.Имя</DataPath>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Имя для входа</v8:content>
+                </v8:item>
+              </Title>
+              <Width>16</Width>
+              <ReadOnly>true</ReadOnly>
+            <Visible>false</Visible></InputField>
+            <InputField name="ИзмененияВид" id="14">
+              <DataPath>Изменения.Вид</DataPath>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Изменение</v8:content>
+                </v8:item>
+              </Title>
+              <Width>12</Width>
+              <ReadOnly>true</ReadOnly>
+            </InputField>
+          </ChildItems>
+        </Table>
+        <HTMLDocumentField name="HTMLДетали" id="16">
+          <DataPath>HTMLДетали</DataPath>
+          <TitleLocation>None</TitleLocation>
+          <Width>64</Width>
+          <Height>20</Height>
+          <HorizontalStretch>true</HorizontalStretch>
+          <VerticalStretch>true</VerticalStretch>
+        <Events><Event name="DocumentComplete">HTMLДеталиДокументСформирован</Event></Events></HTMLDocumentField>
+      </ChildItems>
+    </UsualGroup>
+  </ChildItems>
+  <Attributes>
+    <Attribute name="Объект" id="1">
+      <Type>
+        <v8:Type>cfg:ExternalDataProcessorObject.АдминистрированиеИАудитПользователей</v8:Type>
+      </Type>
+      <MainAttribute>true</MainAttribute>
+    </Attribute>
+    <Attribute name="АдресДанныхСравнения" id="2">
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+      </Type>
+    </Attribute>
+    <Attribute name="ВидИзменений" id="3">
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+      </Type>
+    </Attribute>
+    <Attribute name="Поиск" id="4">
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+      </Type>
+    </Attribute>
+    <Attribute name="HTMLДетали" id="5">
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+      </Type>
+    </Attribute>
+    <Attribute name="Изменения" id="6">
+      <Type>
+        <v8:Type>v8:ValueTable</v8:Type>
+      </Type>
+      <Columns>
+        <Column name="Ключ" id="1">
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+          </Type>
+        </Column>
+        <Column name="ПолноеИмя" id="2">
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+          </Type>
+        </Column>
+        <Column name="Имя" id="3">
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+          </Type>
+        </Column>
+        <Column name="Вид" id="4">
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+          </Type>
+        </Column>
+      </Columns>
+    </Attribute>
+  </Attributes>
+  <Commands>
+    <Command name="ВыбратьПравыйСнимок" id="1">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Другой файл справа ...</v8:content>
+        </v8:item>
+      </Title>
+      <Action>ВыбратьПравыйСнимок</Action>
+    </Command>
+    <Command name="СохранитьСравнение" id="2">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сохранить результат ...</v8:content>
+        </v8:item>
+      </Title>
+      <Action>СохранитьСравнение</Action>
+    </Command>
+  </Commands>
+</Form>

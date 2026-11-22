@@ -1,32 +1,25 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Администрирование и аудит пользователей 3.0</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
 	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
-			<Button name="ЗапуститьПодПользователем" id="132">
-				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ЗапуститьПодПользователем</CommandName>
-				<ExtendedTooltip name="ЗапуститьПодПользователемРасширеннаяПодсказка" id="133"/>
-			</Button>
-			<Button name="ФормаСкопироватьПраваОт" id="255">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СкопироватьПраваОт</CommandName>
-				<ExtendedTooltip name="ФормаСкопироватьПраваОтРасширеннаяПодсказка" id="256"/>
-			</Button>
-			<Button name="ФормаПерейтиНаСтраницуАвтора" id="253">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПерейтиНаСтраницуАвтора</CommandName>
-				<ExtendedTooltip name="ФормаПерейтиНаСтраницуАвтораРасширеннаяПодсказка" id="254"/>
-			</Button>
-		</ChildItems>
+			</ChildItems>
 	</AutoCommandBar>
-	<Events>
+	<Events><Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
-	<ChildItems>
+	<ChildItems><LabelDecoration name="ЦветHTMLbase" id="7500"><Visible>false</Visible><BackColor>style:FormBackColor</BackColor><ContextMenu name="ЦветHTMLbaseКонтекстноеМеню" id="7501"/><ExtendedTooltip name="ЦветHTMLbaseРасширеннаяПодсказка" id="7502"/></LabelDecoration><LabelDecoration name="ЦветHTMLtext" id="7503"><Visible>false</Visible><BackColor>style:FormTextColor</BackColor><ContextMenu name="ЦветHTMLtextКонтекстноеМеню" id="7504"/><ExtendedTooltip name="ЦветHTMLtextРасширеннаяПодсказка" id="7505"/></LabelDecoration><LabelDecoration name="ЦветHTMLhead" id="7506"><Visible>false</Visible><BackColor>style:TableHeaderBackColor</BackColor><ContextMenu name="ЦветHTMLheadКонтекстноеМеню" id="7507"/><ExtendedTooltip name="ЦветHTMLheadРасширеннаяПодсказка" id="7508"/></LabelDecoration><LabelDecoration name="ЦветHTMLheadtext" id="7509"><Visible>false</Visible><BackColor>style:TableHeaderTextColor</BackColor><ContextMenu name="ЦветHTMLheadtextКонтекстноеМеню" id="7510"/><ExtendedTooltip name="ЦветHTMLheadtextРасширеннаяПодсказка" id="7511"/></LabelDecoration><LabelDecoration name="ЦветHTMLborder" id="7512"><Visible>false</Visible><BackColor>style:BorderColor</BackColor><ContextMenu name="ЦветHTMLborderКонтекстноеМеню" id="7513"/><ExtendedTooltip name="ЦветHTMLborderРасширеннаяПодсказка" id="7514"/></LabelDecoration><LabelDecoration name="ЦветHTMLfield" id="7515"><Visible>false</Visible><BackColor>style:FieldBackColor</BackColor><ContextMenu name="ЦветHTMLfieldКонтекстноеМеню" id="7516"/><ExtendedTooltip name="ЦветHTMLfieldРасширеннаяПодсказка" id="7517"/></LabelDecoration><LabelDecoration name="ЦветHTMLfieldtext" id="7518"><Visible>false</Visible><BackColor>style:FieldTextColor</BackColor><ContextMenu name="ЦветHTMLfieldtextКонтекстноеМеню" id="7519"/><ExtendedTooltip name="ЦветHTMLfieldtextРасширеннаяПодсказка" id="7520"/></LabelDecoration><LabelDecoration name="ЦветHTMLselection" id="7521"><Visible>false</Visible><BackColor>style:FieldSelectionBackColor</BackColor><ContextMenu name="ЦветHTMLselectionКонтекстноеМеню" id="7522"/><ExtendedTooltip name="ЦветHTMLselectionРасширеннаяПодсказка" id="7523"/></LabelDecoration><LabelDecoration name="ЦветHTMLselectiontext" id="7524"><Visible>false</Visible><BackColor>style:FieldSelectedTextColor</BackColor><ContextMenu name="ЦветHTMLselectiontextКонтекстноеМеню" id="7525"/><ExtendedTooltip name="ЦветHTMLselectiontextРасширеннаяПодсказка" id="7526"/></LabelDecoration><LabelDecoration name="ЦветHTMLtooltip" id="7527"><Visible>false</Visible><BackColor>style:ToolTipBackColor</BackColor><ContextMenu name="ЦветHTMLtooltipКонтекстноеМеню" id="7528"/><ExtendedTooltip name="ЦветHTMLtooltipРасширеннаяПодсказка" id="7529"/></LabelDecoration><LabelDecoration name="ЦветHTMLtooltiptext" id="7530"><Visible>false</Visible><BackColor>style:ToolTipTextColor</BackColor><ContextMenu name="ЦветHTMLtooltiptextКонтекстноеМеню" id="7531"/><ExtendedTooltip name="ЦветHTMLtooltiptextРасширеннаяПодсказка" id="7532"/></LabelDecoration>
 		<Pages name="Страницы" id="134">
 			<Title>
 				<v8:item>
@@ -42,6 +35,9 @@
 			</ToolTip>
 			<VerticalStretch>true</VerticalStretch>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="135"/>
+			<Events>
+				<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="Пользователи" id="136">
 					<Title>
@@ -60,96 +56,182 @@
 					<Group>AlwaysHorizontal</Group>
 					<ExtendedTooltip name="ПользователиРасширеннаяПодсказка" id="137"/>
 					<ChildItems>
-						<Table name="СписокПользователей" id="101">
-							<Representation>List</Representation>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>СписокПользователей</DataPath>
-							<RowPictureDataPath>~СписокПользователей.DefaultPicture</RowPictureDataPath>
-							<AutoRefresh>false</AutoRefresh>
-							<AutoRefreshPeriod>60</AutoRefreshPeriod>
-							<Period>
-								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-							</Period>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<RestoreCurrentRow>false</RestoreCurrentRow>
-							<TopLevelParent xsi:nil="true"/>
-							<ShowRoot>true</ShowRoot>
-							<AllowRootChoice>false</AllowRootChoice>
-							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-							<ContextMenu name="СписокПользователейКонтекстноеМеню" id="102"/>
-							<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="103"/>
-							<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="104"/>
-							<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="105">
-								<AdditionSource>
-									<Item>СписокПользователей</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="106"/>
-								<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="107"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="108">
-								<AdditionSource>
-									<Item>СписокПользователей</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="109"/>
-								<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="111">
-								<AdditionSource>
-									<Item>СписокПользователей</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="112"/>
-								<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="113"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="OnActivateRow">СписокПользователейПриАктивизацииСтроки</Event>
-							</Events>
+						<UsualGroup name="ПользователиСписок" id="6338">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователи список</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователи список</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПользователиСписокРасширеннаяПодсказка" id="6339"/>
 							<ChildItems>
-								<LabelField name="СписокПользователейИдентификаторПользователяИБ" id="114">
-									<DataPath>~СписокПользователей.ИдентификаторПользователяИБ</DataPath>
-									<Visible>false</Visible>
-									<ContextMenu name="СписокПользователейИдентификаторПользователяИБКонтекстноеМеню" id="115"/>
-									<ExtendedTooltip name="СписокПользователейИдентификаторПользователяИБРасширеннаяПодсказка" id="116"/>
-								</LabelField>
-								<LabelField name="СписокПользователейНаименование" id="117">
-									<DataPath>~СписокПользователей.Наименование</DataPath>
-									<ContextMenu name="СписокПользователейНаименованиеКонтекстноеМеню" id="118"/>
-									<ExtendedTooltip name="СписокПользователейНаименованиеРасширеннаяПодсказка" id="119"/>
-								</LabelField>
-								<CheckBoxField name="СписокПользователейНедействителен" id="120">
-									<DataPath>~СписокПользователей.Недействителен</DataPath>
-									<Visible>false</Visible>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="СписокПользователейНедействителенКонтекстноеМеню" id="121"/>
-									<ExtendedTooltip name="СписокПользователейНедействителенРасширеннаяПодсказка" id="122"/>
-								</CheckBoxField>
-								<CheckBoxField name="СписокПользователейПометкаУдаления" id="123">
-									<DataPath>~СписокПользователей.DeletionMark~СписокПользователей.ПометкаУдаления</DataPath>
-									<Visible>false</Visible>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="СписокПользователейПометкаУдаленияКонтекстноеМеню" id="124"/>
-									<ExtendedTooltip name="СписокПользователейПометкаУдаленияРасширеннаяПодсказка" id="125"/>
-								</CheckBoxField>
-								<LabelField name="СписокПользователейСсылка" id="126">
-									<DataPath>~СписокПользователей.Ссылка</DataPath>
-									<Visible>false</Visible>
-									<ContextMenu name="СписокПользователейСсылкаКонтекстноеМеню" id="127"/>
-									<ExtendedTooltip name="СписокПользователейСсылкаРасширеннаяПодсказка" id="128"/>
-								</LabelField>
-								<LabelField name="СписокПользователейСтандартнаяКартинка" id="129">
-									<DataPath>~СписокПользователей.DefaultPicture</DataPath>
-									<Visible>false</Visible>
-									<ContextMenu name="СписокПользователейСтандартнаяКартинкаКонтекстноеМеню" id="130"/>
-									<ExtendedTooltip name="СписокПользователейСтандартнаяКартинкаРасширеннаяПодсказка" id="131"/>
-								</LabelField>
+								<UsualGroup name="КомандыПользователей" id="6300">
+									<Group>Horizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КомандыПользователейРасширеннаяПодсказка" id="6331"/>
+									<ChildItems>
+										<Button name="ЗапуститьПодПользователем" id="132"><Representation>PictureAndText</Representation>
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ЗапуститьПодПользователем</CommandName>
+											<ExtendedTooltip name="ЗапуститьПодПользователемРасширеннаяПодсказка" id="133"/>
+										</Button>
+										<CommandBar name="ПанельДействийПользователя" id="6812"><HorizontalStretch>false</HorizontalStretch><Autofill>false</Autofill><ChildItems><Popup name="МенюДействийПользователя" id="6813"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Действия</v8:content></v8:item></Title><ChildItems><Button name="ФормаСкопироватьПраваОт" id="255">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СкопироватьПраваОт</CommandName>
+											<ExtendedTooltip name="ФормаСкопироватьПраваОтРасширеннаяПодсказка" id="256"/>
+										</Button></ChildItems></Popup></ChildItems></CommandBar>
+										<Button name="ФормаПерейтиНаСтраницуАвтора" id="253">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<CommandName>Form.Command.ПерейтиНаСтраницуАвтора</CommandName>
+											<ExtendedTooltip name="ФормаПерейтиНаСтраницуАвтораРасширеннаяПодсказка" id="254"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="СписокПользователей" id="101">
+									<Representation>List</Representation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>СписокПользователей</DataPath>
+									<RowPictureDataPath>~СписокПользователей.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="СписокПользователейКонтекстноеМеню" id="102"/>
+									<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="103"/>
+									<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="104"/>
+									<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="105">
+										<AdditionSource>
+											<Item>СписокПользователей</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="108">
+										<AdditionSource>
+											<Item>СписокПользователей</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="109"/>
+										<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="111">
+										<AdditionSource>
+											<Item>СписокПользователей</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="112"/>
+										<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">СписокПользователейПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="СписокПользователейИдентификаторПользователяИБ" id="114">
+											<DataPath>СписокПользователей.ИдентификаторПользователяИБ</DataPath>
+											<Visible>false</Visible>
+											<ContextMenu name="СписокПользователейИдентификаторПользователяИБКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="СписокПользователейИдентификаторПользователяИБРасширеннаяПодсказка" id="116"/>
+										</LabelField>
+										<LabelField name="СписокПользователейНаименование" id="117">
+											<DataPath>СписокПользователей.Наименование</DataPath>
+											<ContextMenu name="СписокПользователейНаименованиеКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="СписокПользователейНаименованиеРасширеннаяПодсказка" id="119"/>
+										</LabelField>
+										<CheckBoxField name="СписокПользователейНедействителен" id="120">
+											<DataPath>СписокПользователей.Недействителен</DataPath>
+											<Visible>false</Visible>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СписокПользователейНедействителенКонтекстноеМеню" id="121"/>
+											<ExtendedTooltip name="СписокПользователейНедействителенРасширеннаяПодсказка" id="122"/>
+										</CheckBoxField>
+										<CheckBoxField name="СписокПользователейПометкаУдаления" id="123">
+											<DataPath>~СписокПользователей.DeletionMark~СписокПользователей.ПометкаУдаления</DataPath>
+											<Visible>false</Visible>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СписокПользователейПометкаУдаленияКонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="СписокПользователейПометкаУдаленияРасширеннаяПодсказка" id="125"/>
+										</CheckBoxField>
+										<LabelField name="СписокПользователейСсылка" id="126">
+											<DataPath>СписокПользователей.Ссылка</DataPath>
+											<Visible>false</Visible>
+											<ContextMenu name="СписокПользователейСсылкаКонтекстноеМеню" id="127"/>
+											<ExtendedTooltip name="СписокПользователейСсылкаРасширеннаяПодсказка" id="128"/>
+										</LabelField>
+										<LabelField name="СписокПользователейСтандартнаяКартинка" id="129">
+											<DataPath>~СписокПользователей.DefaultPicture</DataPath>
+											<Visible>false</Visible>
+											<ContextMenu name="СписокПользователейСтандартнаяКартинкаКонтекстноеМеню" id="130"/>
+											<ExtendedTooltip name="СписокПользователейСтандартнаяКартинкаРасширеннаяПодсказка" id="131"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="Подвал" id="343">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подвал</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="344"/>
+									<ChildItems>
+										<CheckBoxField name="ПоказыватьНедействительныхПользователей" id="98">
+											<DataPath>ПоказыватьНедействительныхПользователей</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показывает недействительных пользователей в этом списке.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоказыватьНедействительныхПользователейКонтекстноеМеню" id="99"/>
+											<ExtendedTooltip name="ПоказыватьНедействительныхПользователейРасширеннаяПодсказка" id="100"/>
+											<Events>
+												<Event name="OnChange">ПоказыватьНедействительныхПользователейПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="КодРазрешения" id="340">
+											<DataPath>КодРазрешения</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметр запуска 1С</v8:content>
+												</v8:item>
+											</ToolTip>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>10</MaxWidth>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="341"/>
+											<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="342"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
-						</Table>
+						</UsualGroup>
 						<UsualGroup name="ИнформацияОПользователе" id="261">
 							<Title>
 								<v8:item>
@@ -241,7 +323,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Аудит пользователей</v8:content>
+							<v8:content>Аудит</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -269,14 +351,41 @@
 							<ChildItems>
 								<Button name="ПроизвестиАудитПользователей" id="170">
 									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
 									<CommandName>Form.Command.ПроизвестиАудитПользователей</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Refresh</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общий аудит</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ПроизвестиАудитПользователейРасширеннаяПодсказка" id="171"/>
+								</Button>
+								<Button name="ПроверитьСлабыеПароли" id="2000">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ПроверитьСлабыеПароли</CommandName>
+									<Picture>
+										<xr:Abs>password-key.png</xr:Abs>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аудит паролей</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПроверитьСлабыеПаролиРасширеннаяПодсказка" id="2005"/>
 								</Button>
 								<Popup name="Действия" id="251">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Действия</v8:content>
+											<v8:content>Ещё</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
@@ -287,367 +396,753 @@
 									</ToolTip>
 									<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="252"/>
 									<ChildItems>
-										<Button name="ЗаблокироватьВходПользователямБезПароля" id="235">
+										<Button name="СохранитьРезультатАудита" id="1134">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаблокироватьВходПользователямБезПароля</CommandName>
-											<ExtendedTooltip name="ЗаблокироватьВходПользователямБезПароляРасширеннаяПодсказка" id="236"/>
+											<CommandName>Form.Command.СохранитьРезультатАудита</CommandName>
+											<ExtendedTooltip name="СохранитьРезультатАудитаРасширеннаяПодсказка" id="1138"/>
 										</Button>
-										<Button name="СделатьНедействительнымиВыделенные" id="259">
+										
+										<Button name="СравнитьСоСнимком" id="7101"><Type>CommandBarButton</Type><CommandName>Form.Command.СравнитьСоСнимком</CommandName></Button>
+										<Button name="РассчитатьПрочуюАктивность" id="7501">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.СделатьНедействительнымиВыделенные</CommandName>
-											<ExtendedTooltip name="СделатьНедействительнымиВыделенныеРасширеннаяПодсказка" id="260"/>
+											<CommandName>Form.Command.РассчитатьПрочуюАктивность</CommandName>
+											<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+											<ExtendedTooltip name="РассчитатьПрочуюАктивностьРасширеннаяПодсказка" id="7507">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Считает начала сеансов HTTP, SOAP и COM по журналу регистрации за выбранное число дней для всех действующих пользователей, которым разрешён вход.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
 										</Button>
-										<Button name="УбратьВсехПользователейИзСпискаВыбора" id="237">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.УбратьВсехПользователейИзСпискаВыбора</CommandName>
-											<ExtendedTooltip name="УбратьВсехПользователейИзСпискаВыбораРасширеннаяПодсказка" id="238"/>
-										</Button>
-									</ChildItems>
+										<Button name="ПереключитьИнтерфейсСписка" id="6302"><Type>CommandBarButton</Type><CommandName>Form.Command.ПереключитьИнтерфейсСписка</CommandName></Button></ChildItems>
 								</Popup>
 							</ChildItems>
 						</CommandBar>
-						<UsualGroup name="АудитШапка" id="149">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Аудит шапка</v8:content>
-								</v8:item>
-							</Title>
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
+						<UsualGroup name="ХодПроверкиПаролей" id="2001">
+							<Visible>false</Visible>
+							<Group>Vertical</Group>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="АудитШапкаРасширеннаяПодсказка" id="150"/>
+							<ExtendedTooltip name="ХодПроверкиПаролейРасширеннаяПодсказка" id="2006"/>
 							<ChildItems>
-								<UsualGroup name="АудитШапкаЛево" id="151">
-									<Group>Vertical</Group>
-									<Representation>StrongSeparation</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="АудитШапкаЛевоРасширеннаяПодсказка" id="152"/>
-									<ChildItems>
-										<LabelDecoration name="ДекорЛево1" id="140">
-											<ContextMenu name="ДекорЛево1КонтекстноеМеню" id="141"/>
-											<ExtendedTooltip name="ДекорЛево1РасширеннаяПодсказка" id="142"/>
-										</LabelDecoration>
-										<LabelDecoration name="ДекорЛево2" id="143">
-											<ContextMenu name="ДекорЛево2КонтекстноеМеню" id="144"/>
-											<ExtendedTooltip name="ДекорЛево2РасширеннаяПодсказка" id="145"/>
-										</LabelDecoration>
-										<LabelDecoration name="ДекорЛево3" id="146">
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Связь проверяется только с обычными пользователями БСП, включёнными в аудит. Служебные записи БСП исключены.</v8:content>
-												</v8:item>
-											</ToolTip>
-											<ContextMenu name="ДекорЛево3КонтекстноеМеню" id="147"/>
-											<ExtendedTooltip name="ДекорЛево3РасширеннаяПодсказка" id="148"/>
-										</LabelDecoration>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="АудитШапкаПраво" id="153">
-									<Group>Vertical</Group>
-									<Representation>StrongSeparation</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="АудитШапкаПравоРасширеннаяПодсказка" id="154"/>
-									<ChildItems>
-										<LabelDecoration name="ДекорПраво1" id="155">
-											<ContextMenu name="ДекорПраво1КонтекстноеМеню" id="156"/>
-											<ExtendedTooltip name="ДекорПраво1РасширеннаяПодсказка" id="157"/>
-										</LabelDecoration>
-										<LabelDecoration name="ДекорПраво2" id="164">
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="ДекорПраво2КонтекстноеМеню" id="165"/>
-											<ExtendedTooltip name="ДекорПраво2РасширеннаяПодсказка" id="166"/>
-										</LabelDecoration>
-										<LabelDecoration name="ДекорПраво3" id="167">
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="ДекорПраво3КонтекстноеМеню" id="168"/>
-											<ExtendedTooltip name="ДекорПраво3РасширеннаяПодсказка" id="169"/>
-										</LabelDecoration>
-									</ChildItems>
-								</UsualGroup>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Отборы" id="233">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Отборы</v8:content>
-								</v8:item>
-							</Title>
-							<Group>AlwaysHorizontal</Group>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="234"/>
-							<ChildItems>
-								<LabelDecoration name="ДекорацияОтбор" id="244">
+								<LabelDecoration name="ТекстПроверкиПаролей" id="2002">
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Отбор:</v8:content>
+											<v8:content>Проверка слабых паролей</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ДекорацияОтборКонтекстноеМеню" id="245"/>
-									<ExtendedTooltip name="ДекорацияОтборРасширеннаяПодсказка" id="246"/>
+									<ContextMenu name="ТекстПроверкиПаролейКонтекстноеМеню" id="2007"/>
+									<ExtendedTooltip name="ТекстПроверкиПаролейРасширеннаяПодсказка" id="2008"/>
 								</LabelDecoration>
-								<CheckBoxField name="ОтборПолныеПрава" id="230">
-									<DataPath>ОтборПолныеПрава</DataPath>
-									<TitleLocation>Right</TitleLocation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОтборПолныеПраваКонтекстноеМеню" id="231"/>
-									<ExtendedTooltip name="ОтборПолныеПраваРасширеннаяПодсказка" id="232"/>
-									<Events>
-										<Event name="OnChange">ОтборПолныеПраваПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-								<CheckBoxField name="ОтборПустойПарольСАвторизацией" id="227">
-									<DataPath>ОтборПустойПарольСАвторизацией</DataPath>
-									<TitleLocation>Right</TitleLocation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОтборПустойПарольСАвторизациейКонтекстноеМеню" id="228"/>
-									<ExtendedTooltip name="ОтборПустойПарольСАвторизациейРасширеннаяПодсказка" id="229"/>
-									<Events>
-										<Event name="OnChange">ОтборПустойПарольСАвторизациейПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-								<CheckBoxField name="ОтборБезПрав" id="337">
-									<DataPath>ОтборБезПрав</DataPath>
-									<TitleLocation>Right</TitleLocation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОтборБезПравКонтекстноеМеню" id="338"/>
-									<ExtendedTooltip name="ОтборБезПравРасширеннаяПодсказка" id="339"/>
-									<Events>
-										<Event name="OnChange">ОтборБезПравПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
+								<ProgressBarField name="ИндикаторПроверкиПаролей" id="2003">
+									<DataPath>ПрогрессПроверкиПаролей</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ИндикаторПроверкиПаролейКонтекстноеМеню" id="2009"/>
+									<ExtendedTooltip name="ИндикаторПроверкиПаролейРасширеннаяПодсказка" id="2010"/>
+								</ProgressBarField>
+								<Button name="ОтменитьПроверкуПаролей" id="2004">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОтменитьПроверкуПаролей</CommandName>
+									<ExtendedTooltip name="ОтменитьПроверкуПаролейРасширеннаяПодсказка" id="2011"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="РезультатАудитаПользователей" id="172">
-							<Representation>List</Representation>
-							<ReadOnly>true</ReadOnly>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.АудитПользователей</DataPath>
-							<CommandSet>
-								<ExcludedCommand>Add</ExcludedCommand>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>Delete</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
-								<ExcludedCommand>MoveDown</ExcludedCommand>
-								<ExcludedCommand>MoveUp</ExcludedCommand>
-								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-							</CommandSet>
-							<ViewStatusLocation>None</ViewStatusLocation>
-							<SearchControlLocation>None</SearchControlLocation>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="РезультатАудитаПользователейКонтекстноеМеню" id="173"/>
-							<AutoCommandBar name="РезультатАудитаПользователейКоманднаяПанель" id="174"/>
-							<ExtendedTooltip name="РезультатАудитаПользователейРасширеннаяПодсказка" id="175"/>
-							<SearchStringAddition name="РезультатАудитаПользователейСтрокаПоиска" id="176">
-								<AdditionSource>
-									<Item>РезультатАудитаПользователей</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="РезультатАудитаПользователейСтрокаПоискаКонтекстноеМеню" id="177"/>
-								<ExtendedTooltip name="РезультатАудитаПользователейСтрокаПоискаРасширеннаяПодсказка" id="178"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="РезультатАудитаПользователейСостояниеПросмотра" id="179">
-								<AdditionSource>
-									<Item>РезультатАудитаПользователей</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="РезультатАудитаПользователейСостояниеПросмотраКонтекстноеМеню" id="180"/>
-								<ExtendedTooltip name="РезультатАудитаПользователейСостояниеПросмотраРасширеннаяПодсказка" id="181"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="РезультатАудитаПользователейУправлениеПоиском" id="182">
-								<AdditionSource>
-									<Item>РезультатАудитаПользователей</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="РезультатАудитаПользователейУправлениеПоискомКонтекстноеМеню" id="183"/>
-								<ExtendedTooltip name="РезультатАудитаПользователейУправлениеПоискомРасширеннаяПодсказка" id="184"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="Selection">РезультатАудитаПользователейВыбор</Event>
-							</Events>
+						<UsualGroup name="РабочееМесто" id="3008">
+							<Visible>false</Visible>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="РабочееМестоРасширеннаяПодсказка" id="6203"/>
 							<ChildItems>
-								<CheckBoxField name="РезультатАудитаПользователейНайденПользовательИБ" id="390">
-									<DataPath>Объект.АудитПользователей.НайденПользовательИБ</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Найден в ИБ</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейНайденПользовательИБКонтекстноеМеню" id="391"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейНайденПользовательИБРасширеннаяПодсказка" id="392"/>
-								</CheckBoxField>
-								<InputField name="РезультатАудитаПользователейПолноеИмя" id="348">
-									<DataPath>Объект.АудитПользователей.ПолноеИмя</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="РезультатАудитаПользователейПолноеИмяКонтекстноеМеню" id="349"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейПолноеИмяРасширеннаяПодсказка" id="350"/>
-								</InputField>
-								<InputField name="РезультатАудитаПользователейИмя" id="351">
-									<DataPath>Объект.АудитПользователей.Имя</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="РезультатАудитаПользователейИмяКонтекстноеМеню" id="352"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейИмяРасширеннаяПодсказка" id="353"/>
-								</InputField>
-								<CheckBoxField name="РезультатАудитаПользователейНедействителен" id="378">
-									<DataPath>Объект.АудитПользователей.Недействителен</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейНедействителенКонтекстноеМеню" id="379"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейНедействителенРасширеннаяПодсказка" id="380"/>
-								</CheckBoxField>
-								<ColumnGroup name="АудитПользователейТипыАутентификации" id="257">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Типы аутентификации</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Аудит пользователей типы аутентификации</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Horizontal</Group>
-									<ShowInHeader>true</ShowInHeader>
-									<ExtendedTooltip name="АудитПользователейТипыАутентификацииРасширеннаяПодсказка" id="258"/>
+								<HTMLDocumentField name="HTMLКатегории" id="7202"><TitleLocation>None</TitleLocation><DataPath>HTMLКатегории</DataPath><Width>30</Width><HorizontalStretch>false</HorizontalStretch><VerticalStretch>true</VerticalStretch><ContextMenu name="HTMLКатегорииКонтекстноеМеню" id="7203"/><ExtendedTooltip name="HTMLКатегорииРасширеннаяПодсказка" id="7204"/><Events><Event name="DocumentComplete">HTMLКатегорииДокументСформирован</Event><Event name="OnClick">HTMLКатегорииПриНажатии</Event></Events></HTMLDocumentField>
+								<UsualGroup name="СписокПроблем" id="3013">
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СписокПроблемРасширеннаяПодсказка" id="6222"/>
 									<ChildItems>
-										<CheckBoxField name="РезультатАудитаПользователейАутентификацияСтандартная" id="363">
-											<DataPath>Объект.АудитПользователей.АутентификацияСтандартная</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="РезультатАудитаПользователейАутентификацияСтандартнаяКонтекстноеМеню" id="364"/>
-											<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияСтандартнаяРасширеннаяПодсказка" id="365"/>
-										</CheckBoxField>
-										<CheckBoxField name="РезультатАудитаПользователейАутентификацияОС" id="360">
-											<DataPath>Объект.АудитПользователей.АутентификацияОС</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="РезультатАудитаПользователейАутентификацияОСКонтекстноеМеню" id="361"/>
-											<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияОСРасширеннаяПодсказка" id="362"/>
-										</CheckBoxField>
-										<CheckBoxField name="РезультатАудитаПользователейАутентификацияOpenID" id="354">
-											<DataPath>Объект.АудитПользователей.АутентификацияOpenID</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="РезультатАудитаПользователейАутентификацияOpenIDКонтекстноеМеню" id="355"/>
-											<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияOpenIDРасширеннаяПодсказка" id="356"/>
-										</CheckBoxField>
-										<CheckBoxField name="РезультатАудитаПользователейАутентификацияOpenIDConnect" id="357">
-											<DataPath>Объект.АудитПользователей.АутентификацияOpenIDConnect</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="РезультатАудитаПользователейАутентификацияOpenIDConnectКонтекстноеМеню" id="358"/>
-											<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияOpenIDConnectРасширеннаяПодсказка" id="359"/>
-										</CheckBoxField>
-									</ChildItems>
-								</ColumnGroup>
-								<CheckBoxField name="РезультатАудитаПользователейПарольУстановлен" id="366">
-									<DataPath>Объект.АудитПользователей.ПарольУстановлен</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейПарольУстановленКонтекстноеМеню" id="367"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейПарольУстановленРасширеннаяПодсказка" id="368"/>
-								</CheckBoxField>
-								<CheckBoxField name="РезультатАудитаПользователейПоказыватьВСпискеВыбора" id="369">
-									<DataPath>Объект.АудитПользователей.ПоказыватьВСпискеВыбора</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейПоказыватьВСпискеВыбораКонтекстноеМеню" id="370"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейПоказыватьВСпискеВыбораРасширеннаяПодсказка" id="371"/>
-								</CheckBoxField>
-								<CheckBoxField name="РезультатАудитаПользователейЕстьПолныеПрава" id="372">
-									<DataPath>Объект.АудитПользователей.ЕстьПолныеПрава</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейЕстьПолныеПраваКонтекстноеМеню" id="373"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейЕстьПолныеПраваРасширеннаяПодсказка" id="374"/>
-								</CheckBoxField>
-								<CheckBoxField name="РезультатАудитаПользователейНетНикакихПрав" id="387">
-									<DataPath>Объект.АудитПользователей.НетНикакихПрав</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РезультатАудитаПользователейНетНикакихПравКонтекстноеМеню" id="388"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейНетНикакихПравРасширеннаяПодсказка" id="389"/>
-								</CheckBoxField>
-								<InputField name="РезультатАудитаПользователейПользовательБСП" id="375">
-									<DataPath>Объект.АудитПользователей.ПользовательБСП</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="РезультатАудитаПользователейПользовательБСПКонтекстноеМеню" id="376"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейПользовательБСПРасширеннаяПодсказка" id="377"/>
-								</InputField>
-								<InputField name="РезультатАудитаПользователейПользовательОС" id="384">
-									<DataPath>Объект.АудитПользователей.ПользовательОС</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="РезультатАудитаПользователейПользовательОСКонтекстноеМеню" id="385"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейПользовательОСРасширеннаяПодсказка" id="386"/>
-								</InputField>
-								<InputField name="РезультатАудитаПользователейИдентификаторПользователяИБ" id="381">
-									<DataPath>Объект.АудитПользователей.ИдентификаторПользователяИБ</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="РезультатАудитаПользователейИдентификаторПользователяИБКонтекстноеМеню" id="382"/>
-									<ExtendedTooltip name="РезультатАудитаПользователейИдентификаторПользователяИБРасширеннаяПодсказка" id="383"/>
-								</InputField>
+										<LabelDecoration name="ОписаниеПроблемы" id="3015">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Нажмите «Общий аудит», чтобы увидеть пользователей и замечания.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеПроблемыКонтекстноеМеню" id="6225"/>
+											<ExtendedTooltip name="ОписаниеПроблемыРасширеннаяПодсказка" id="6226"/>
+										</LabelDecoration>
+										<UsualGroup name="ПанельРабочегоСписка" id="5002">
+											<Visible>false</Visible>
+											<Group>Horizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ПанельРабочегоСпискаРасширеннаяПодсказка" id="6227"/>
+											<ChildItems>
+												<Button name="ВыделитьВсеСтрокиАудита" id="5010"><Width>3</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>3</MaxWidth><HorizontalStretch>false</HorizontalStretch>
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.ВыделитьВсеСтрокиАудита</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ВыделитьВсеСтрокиАудитаРасширеннаяПодсказка" id="6230"/>
+												</Button>
+												<Button name="СнятьВыделениеСтрокАудита" id="5011"><Width>3</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>3</MaxWidth><HorizontalStretch>false</HorizontalStretch>
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.СнятьВыделениеСтрокАудита</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="СнятьВыделениеСтрокАудитаРасширеннаяПодсказка" id="6231"/>
+												</Button>
+											<InputField name="ПоискАудита" id="3016">
+													<DataPath>ПоискАудита</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Shortcut>Ctrl+F</Shortcut>
+													<Width>19</Width>
+													<ClearButton>true</ClearButton>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Поиск (Ctrl+F)</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ПоискАудитаКонтекстноеМеню" id="6228"/>
+													<ExtendedTooltip name="ПоискАудитаРасширеннаяПодсказка" id="6229"/>
+													<Events>
+														<Event name="OnChange">ПоискАудитаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<CommandBar name="ПанельКомандКатегории" id="6816"><Autofill>false</Autofill><HorizontalStretch>false</HorizontalStretch><ChildItems><Button name="ОтключитьВходВыбранным" id="7300"><Type>CommandBarButton</Type><CommandName>Form.Command.ОтключитьВходВыбранным</CommandName><Visible>false</Visible></Button><Button name="ПотребоватьПарольВыбранным" id="6320"><Type>CommandBarButton</Type><CommandName>Form.Command.ПотребоватьПарольВыбранным</CommandName><Visible>false</Visible></Button><Button name="ЗаблокироватьВыбранных" id="6321"><Type>CommandBarButton</Type><CommandName>Form.Command.ЗаблокироватьВыбранных</CommandName><Visible>false</Visible></Button><Button name="НедействительныВыбранные" id="6322"><Type>CommandBarButton</Type><CommandName>Form.Command.НедействительныВыбранные</CommandName><Visible>false</Visible></Button><Button name="БлокироватьНеактивныхВыбранных" id="6700"><Type>CommandBarButton</Type><CommandName>Form.Command.БлокироватьНеактивныхВыбранных</CommandName><Visible>false</Visible></Button><Button name="ИзменитьПорогНеактивности" id="6701"><Type>CommandBarButton</Type><CommandName>Form.Command.ИзменитьПорогНеактивности</CommandName><Visible>false</Visible></Button></ChildItems></CommandBar></ChildItems>
+										</UsualGroup>
+										<HTMLDocumentField name="HTMLРабочееМесто" id="3503">
+											<DataPath>HTMLРабочееМесто</DataPath>
+											<Visible>false</Visible>
+											<TitleLocation>None</TitleLocation>
+											<Height>6</Height>
+											<ContextMenu name="HTMLРабочееМестоКонтекстноеМеню" id="6234"/>
+											<ExtendedTooltip name="HTMLРабочееМестоРасширеннаяПодсказка" id="6235"/>
+											<Events><Event name="DocumentComplete">HTMLРабочееМестоДокументСформирован</Event>
+												<Event name="OnClick">HTMLРабочееМестоПриНажатии</Event>
+											</Events>
+										</HTMLDocumentField>
+										<Table name="РезультатАудитаПользователей" id="172">
+											<Representation>List</Representation>
+											<Visible>false</Visible>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<Height>6</Height>
+											<DataPath>РабочийСписок</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="РезультатАудитаПользователейКонтекстноеМеню" id="173">
+												<ChildItems>
+													<Button name="СортироватьПрочуюАктивность" id="7509">
+														<Type>CommandBarButton</Type>
+														<Visible>false</Visible>
+														<CommandName>Form.Command.СортироватьПрочуюАктивность</CommandName>
+														<ExtendedTooltip name="СортироватьПрочуюАктивностьРасширеннаяПодсказка" id="7510"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="РезультатАудитаПользователейКоманднаяПанель" id="174"/>
+											<ExtendedTooltip name="РезультатАудитаПользователейРасширеннаяПодсказка" id="175"/>
+											<SearchStringAddition name="РезультатАудитаПользователейСтрокаПоиска" id="176">
+												<Visible>false</Visible>
+												<AdditionSource>
+													<Item>РезультатАудитаПользователей</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатАудитаПользователейСтрокаПоискаКонтекстноеМеню" id="177"/>
+												<ExtendedTooltip name="РезультатАудитаПользователейСтрокаПоискаРасширеннаяПодсказка" id="178"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="РезультатАудитаПользователейСостояниеПросмотра" id="179">
+												<AdditionSource>
+													<Item>РезультатАудитаПользователей</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатАудитаПользователейСостояниеПросмотраКонтекстноеМеню" id="180"/>
+												<ExtendedTooltip name="РезультатАудитаПользователейСостояниеПросмотраРасширеннаяПодсказка" id="181"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="РезультатАудитаПользователейУправлениеПоиском" id="182">
+												<Visible>false</Visible>
+												<AdditionSource>
+													<Item>РезультатАудитаПользователей</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатАудитаПользователейУправлениеПоискомКонтекстноеМеню" id="183"/>
+												<ExtendedTooltip name="РезультатАудитаПользователейУправлениеПоискомРасширеннаяПодсказка" id="184"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">РезультатАудитаПользователейВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="РезультатАудитаПользователейПолноеИмя" id="348">
+													<DataPath>РабочийСписок.ПолноеИмя</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Полное имя</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>26</Width>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="РезультатАудитаПользователейПолноеИмяКонтекстноеМеню" id="349"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПолноеИмяРасширеннаяПодсказка" id="350"/>
+												</InputField>
+												<ColumnGroup name="КолонкаЗамечания" id="1008">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Замечания</v8:content>
+														</v8:item>
+													</Title>
+													<Group>InCell</Group>
+													<ExtendedTooltip name="КолонкаЗамечанияРасширеннаяПодсказка" id="1025"/>
+													<ChildItems>
+														<PictureField name="ЗначокЗамечаний" id="1007">
+															<DataPath>РабочийСписок.КартинкаЗамечаний</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<Width>2</Width>
+															<ContextMenu name="ЗначокЗамечанийКонтекстноеМеню" id="1026"/>
+															<ExtendedTooltip name="ЗначокЗамечанийРасширеннаяПодсказка" id="1027"/>
+														</PictureField>
+														<InputField name="РезультатАудитаПользователейЗамечания" id="393">
+															<DataPath>РабочийСписок.Замечания</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Замечания</v8:content>
+																</v8:item>
+															</Title>
+															<Width>38</Width>
+															<ContextMenu name="РезультатАудитаПользователейЗамечанияКонтекстноеМеню" id="394"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейЗамечанияРасширеннаяПодсказка" id="395"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+												<InputField name="РезультатАудитаПользователейОписаниеПрав" id="399">
+													<DataPath>РабочийСписок.ОписаниеПрав</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Права</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="РезультатАудитаПользователейОписаниеПравКонтекстноеМеню" id="400"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейОписаниеПравРасширеннаяПодсказка" id="401"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейИмяПользователяБСП" id="402">
+													<DataPath>РабочийСписок.ИмяПользователяБСП</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя карточки БСП</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейИмяПользователяБСПКонтекстноеМеню" id="403"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейИмяПользователяБСПРасширеннаяПодсказка" id="404"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейИмяФизическогоЛица" id="405">
+													<DataPath>РабочийСписок.ИмяФизическогоЛица</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ФИО физлица</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейИмяФизическогоЛицаКонтекстноеМеню" id="406"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейИмяФизическогоЛицаРасширеннаяПодсказка" id="407"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейДатаПоследнейАктивности" id="408">
+													<DataPath>РабочийСписок.ДатаПоследнейАктивности</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Последняя активность БСП</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейДатаПоследнейАктивностиКонтекстноеМеню" id="409"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейДатаПоследнейАктивностиРасширеннаяПодсказка" id="410"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейПрочаяАктивность" id="7502">
+													<DataPath>РабочийСписок.ПрочаяАктивность</DataPath>
+													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
+													<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Прочая активность</v8:content></v8:item></Title>
+													<Format><v8:item><v8:lang>ru</v8:lang><v8:content>ЧГ=0; ЧН=-</v8:content></v8:item></Format>
+													<ContextMenu name="ПрочаяАктивностьКонтекстноеМеню" id="7503"/>
+													<ExtendedTooltip name="ПрочаяАктивностьРасширеннаяПодсказка" id="7504"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейСтатусПроверкиАктивности" id="411"><Visible>false</Visible>
+													<DataPath>РабочийСписок.СтатусПроверкиАктивности</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Источник активности</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейСтатусПроверкиАктивностиКонтекстноеМеню" id="412"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейСтатусПроверкиАктивностиРасширеннаяПодсказка" id="413"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейЕстьАдминистративныеПрава" id="414">
+													<DataPath>РабочийСписок.ЕстьАдминистративныеПрава</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Административные права</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейЕстьАдминистративныеПраваКонтекстноеМеню" id="415"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейЕстьАдминистративныеПраваРасширеннаяПодсказка" id="416"/>
+												</InputField>
+												<CheckBoxField name="РезультатАудитаПользователейНайденПользовательИБ" id="390">
+													<DataPath>РабочийСписок.НайденПользовательИБ</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Найден в ИБ</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейНайденПользовательИБКонтекстноеМеню" id="391"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейНайденПользовательИБРасширеннаяПодсказка" id="392"/>
+												</CheckBoxField>
+												<InputField name="РезультатАудитаПользователейИмя" id="351">
+													<DataPath>РабочийСписок.Имя</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>18</Width>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="РезультатАудитаПользователейИмяКонтекстноеМеню" id="352"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейИмяРасширеннаяПодсказка" id="353"/>
+												</InputField>
+												<CheckBoxField name="РезультатАудитаПользователейНедействителен" id="378">
+													<DataPath>РабочийСписок.Недействителен</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейНедействителенКонтекстноеМеню" id="379"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейНедействителенРасширеннаяПодсказка" id="380"/>
+												</CheckBoxField>
+												<ColumnGroup name="АудитПользователейТипыАутентификации" id="257">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Типы аутентификации</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Аудит пользователей типы аутентификации</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowInHeader>true</ShowInHeader>
+													<ExtendedTooltip name="АудитПользователейТипыАутентификацииРасширеннаяПодсказка" id="258"/>
+													<ChildItems>
+														<CheckBoxField name="РезультатАудитаПользователейАутентификацияСтандартная" id="363">
+															<DataPath>РабочийСписок.АутентификацияСтандартная</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РезультатАудитаПользователейАутентификацияСтандартнаяКонтекстноеМеню" id="364"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияСтандартнаяРасширеннаяПодсказка" id="365"/>
+														</CheckBoxField>
+														<CheckBoxField name="РезультатАудитаПользователейАутентификацияОС" id="360">
+															<DataPath>РабочийСписок.АутентификацияОС</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РезультатАудитаПользователейАутентификацияОСКонтекстноеМеню" id="361"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияОСРасширеннаяПодсказка" id="362"/>
+														</CheckBoxField>
+														<CheckBoxField name="РезультатАудитаПользователейАутентификацияOpenID" id="354">
+															<DataPath>РабочийСписок.АутентификацияOpenID</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РезультатАудитаПользователейАутентификацияOpenIDКонтекстноеМеню" id="355"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияOpenIDРасширеннаяПодсказка" id="356"/>
+														</CheckBoxField>
+														<CheckBoxField name="РезультатАудитаПользователейАутентификацияOpenIDConnect" id="357">
+															<DataPath>РабочийСписок.АутентификацияOpenIDConnect</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РезультатАудитаПользователейАутентификацияOpenIDConnectКонтекстноеМеню" id="358"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияOpenIDConnectРасширеннаяПодсказка" id="359"/>
+														</CheckBoxField>
+													</ChildItems>
+												</ColumnGroup>
+												<CheckBoxField name="РезультатАудитаПользователейПарольУстановлен" id="366">
+													<DataPath>РабочийСписок.ПарольУстановлен</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейПарольУстановленКонтекстноеМеню" id="367"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПарольУстановленРасширеннаяПодсказка" id="368"/>
+												</CheckBoxField>
+												<CheckBoxField name="РезультатАудитаПользователейПоказыватьВСпискеВыбора" id="369">
+													<DataPath>РабочийСписок.ПоказыватьВСпискеВыбора</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейПоказыватьВСпискеВыбораКонтекстноеМеню" id="370"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПоказыватьВСпискеВыбораРасширеннаяПодсказка" id="371"/>
+												</CheckBoxField>
+												<CheckBoxField name="РезультатАудитаПользователейЕстьПолныеПрава" id="372">
+													<DataPath>РабочийСписок.ЕстьПолныеПрава</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейЕстьПолныеПраваКонтекстноеМеню" id="373"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейЕстьПолныеПраваРасширеннаяПодсказка" id="374"/>
+												</CheckBoxField>
+												<CheckBoxField name="РезультатАудитаПользователейНетНикакихПрав" id="387">
+													<DataPath>РабочийСписок.НетНикакихПрав</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейНетНикакихПравКонтекстноеМеню" id="388"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейНетНикакихПравРасширеннаяПодсказка" id="389"/>
+												</CheckBoxField>
+												<InputField name="РезультатАудитаПользователейПользовательБСП" id="375">
+													<DataPath>РабочийСписок.ПользовательБСП</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="РезультатАудитаПользователейПользовательБСПКонтекстноеМеню" id="376"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПользовательБСПРасширеннаяПодсказка" id="377"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейПользовательОС" id="384">
+													<DataPath>РабочийСписок.ПользовательОС</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="РезультатАудитаПользователейПользовательОСКонтекстноеМеню" id="385"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПользовательОСРасширеннаяПодсказка" id="386"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейИдентификаторПользователяИБ" id="381">
+													<DataPath>РабочийСписок.ИдентификаторПользователяИБ</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="РезультатАудитаПользователейИдентификаторПользователяИБКонтекстноеМеню" id="382"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейИдентификаторПользователяИБРасширеннаяПодсказка" id="383"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейКоличествоРолей" id="1012">
+													<DataPath>РабочийСписок.КоличествоРолей</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Количество ролей</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейКоличествоРолейКонтекстноеМеню" id="1033"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейКоличествоРолейРасширеннаяПодсказка" id="1034"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейСписокРолей" id="1013">
+													<DataPath>РабочийСписок.СписокРолей</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Список ролей</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейСписокРолейКонтекстноеМеню" id="1035"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейСписокРолейРасширеннаяПодсказка" id="1036"/>
+												</InputField>
+												<InputField name="РезультатАудитаПользователейДатаУстановкиПароля" id="1014">
+													<DataPath>РабочийСписок.ДатаУстановкиПароля</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата установки пароля</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейДатаУстановкиПароляКонтекстноеМеню" id="1037"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейДатаУстановкиПароляРасширеннаяПодсказка" id="1038"/>
+												</InputField>
+												<CheckBoxField name="РезультатАудитаПользователейПометкаУдаленияБСП" id="1015">
+													<DataPath>РабочийСписок.ПометкаУдаленияБСП</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пометка удаления БСП</v8:content>
+														</v8:item>
+													</Title>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейПометкаУдаленияБСПКонтекстноеМеню" id="1039"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейПометкаУдаленияБСПРасширеннаяПодсказка" id="1040"/>
+												</CheckBoxField>
+												<InputField name="РезультатАудитаПользователейФизическоеЛицо" id="1016">
+													<DataPath>РабочийСписок.ФизическоеЛицо</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Физическое лицо</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РезультатАудитаПользователейФизическоеЛицоКонтекстноеМеню" id="1041"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейФизическоеЛицоРасширеннаяПодсказка" id="1042"/>
+												</InputField>
+												<CheckBoxField name="РезультатАудитаПользователейАутентификацияТокеномДоступа" id="1017">
+													<DataPath>РабочийСписок.АутентификацияТокеномДоступа</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вход по токену доступа</v8:content>
+														</v8:item>
+													</Title>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РезультатАудитаПользователейАутентификацияТокеномДоступаКонтекстноеМеню" id="1043"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейАутентификацияТокеномДоступаРасширеннаяПодсказка" id="1044"/>
+												</CheckBoxField>
+												<LabelField name="РезультатАудитаПользователейДействие" id="3006"><Visible>false</Visible>
+													<DataPath>РабочийСписок.Действие</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия</v8:content>
+														</v8:item>
+													</Title>
+													<Width>27</Width>
+													<ContextMenu name="РезультатАудитаПользователейДействиеКонтекстноеМеню" id="6236"/>
+													<ExtendedTooltip name="РезультатАудитаПользователейДействиеРасширеннаяПодсказка" id="6237"/>
+													<Events>
+														<Event name="Click">ДействиеАудитаНажатие</Event>
+													</Events>
+												</LabelField>
+												<ColumnGroup name="КолонкаПоследнийВход" id="1011">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Последний вход, дн</v8:content>
+														</v8:item>
+													</Title>
+													<Group>InCell</Group>
+													<ExtendedTooltip name="КолонкаПоследнийВходРасширеннаяПодсказка" id="1028"/>
+													<ChildItems>
+														<PictureField name="ЗначокАктивности" id="1010">
+															<DataPath>РабочийСписок.КартинкаАктивности</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<Width>2</Width>
+															<ContextMenu name="ЗначокАктивностиКонтекстноеМеню" id="1029"/>
+															<ExtendedTooltip name="ЗначокАктивностиРасширеннаяПодсказка" id="1030"/>
+														</PictureField>
+														<InputField name="РезультатАудитаПользователейПоследнийВходВДнях" id="1009">
+															<DataPath>РабочийСписок.ДнейПослеАктивности</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Последний вход, дн</v8:content>
+																</v8:item>
+															</Title>
+															<Width>12</Width>
+															<Format>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЧГ=0; ЧДЦ=0; ЧН=0</v8:content>
+																</v8:item>
+															</Format>
+															<ContextMenu name="РезультатАудитаПользователейПоследнийВходВДняхКонтекстноеМеню" id="1031"/>
+															<ExtendedTooltip name="РезультатАудитаПользователейПоследнийВходВДняхРасширеннаяПодсказка" id="1032"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</Table>
+										</ChildItems>
+								</UsualGroup>
 							</ChildItems>
-						</Table>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="АктивностьПользователей" id="4006">
+					<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Общая активность</v8:content></v8:item></Title><VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="АктивностьПользователейРасширеннаяПодсказка" id="6243"/>
+					<ChildItems>
+						<UsualGroup name="ПериодАктивности" id="4007">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПериодАктивностиРасширеннаяПодсказка" id="6244"/>
+							<ChildItems>
+								<Button name="РассчитатьАктивность" id="4011">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.РассчитатьАктивность</CommandName>
+									<ExtendedTooltip name="РассчитатьАктивностьРасширеннаяПодсказка" id="6249"/>
+								</Button>
+								<InputField name="АктивностьПериод" id="5040">
+									<DataPath>АктивностьПериод</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</Title>
+									<Width>14</Width>
+									<ChoiceButton>true</ChoiceButton>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="АктивностьПериодКонтекстноеМеню" id="6245"/>
+									<ExtendedTooltip name="АктивностьПериодРасширеннаяПодсказка" id="6246"/>
+									<Events>
+										<Event name="OnChange">АктивностьПериодПриИзменении</Event>
+										<Event name="StartChoice">АктивностьПериодНачалоВыбора</Event>
+									</Events>
+								<AutoMaxWidth>false</AutoMaxWidth><MaxWidth>14</MaxWidth><HorizontalStretch>false</HorizontalStretch></InputField>
+								<InputField name="АктивностьПользователь" id="6200">
+									<DataPath>АктивностьПользователь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<Width>28</Width>
+									<DropListButton>true</DropListButton>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>false</ListChoiceMode>
+									<TextEdit>true</TextEdit>
+									<ContextMenu name="АктивностьПользовательКонтекстноеМеню" id="6247"/>
+									<ExtendedTooltip name="АктивностьПользовательРасширеннаяПодсказка" id="6248"/>
+								<AutoMaxWidth>false</AutoMaxWidth><MaxWidth>28</MaxWidth><HorizontalStretch>false</HorizontalStretch><Events><Event name="AutoComplete">АктивностьПользовательАвтоПодбор</Event><Event name="TextEditEnd">АктивностьПользовательОкончаниеВводаТекста</Event><Event name="ChoiceProcessing">АктивностьПользовательОбработкаВыбора</Event><Event name="OnChange">АктивностьПользовательПриИзменении</Event></Events><InputHint><v8:item><v8:lang>ru</v8:lang><v8:content>Все пользователи</v8:content></v8:item></InputHint></InputField>
+								<Button name="ОтменитьАктивность" id="4013">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.ОтменитьАктивность</CommandName>
+									<ExtendedTooltip name="ОтменитьАктивностьРасширеннаяПодсказка" id="6250"/>
+								</Button>
+							<InputField name="ПериодичностьАктивности" id="6330"><DataPath>ПериодичностьАктивности</DataPath><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Периодичность</v8:content></v8:item></Title><DropListButton>true</DropListButton><ListChoiceMode>true</ListChoiceMode><TextEdit>false</TextEdit><Events><Event name="OnChange">ПериодичностьАктивностиПриИзменении</Event></Events><Width>9</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>9</MaxWidth><HorizontalStretch>false</HorizontalStretch></InputField></ChildItems>
+						</UsualGroup>
+						<ProgressBarField name="ИндикаторАктивности" id="4014">
+							<DataPath>ПрогрессАктивности</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ИндикаторАктивностиКонтекстноеМеню" id="6251"/>
+							<ExtendedTooltip name="ИндикаторАктивностиРасширеннаяПодсказка" id="6252"/>
+						</ProgressBarField>
+						<HTMLDocumentField name="HTMLАктивности" id="4016">
+							<DataPath>HTMLАктивности</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="HTMLАктивностиКонтекстноеМеню" id="6255"/>
+							<ExtendedTooltip name="HTMLАктивностиРасширеннаяПодсказка" id="6256"/>
+						<Events><Event name="DocumentComplete">HTMLАктивностиДокументСформирован</Event></Events></HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ДействиеПользователя" id="6500">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="ДействиеПользователяРасширеннаяПодсказка" id="6501"/>
+					<ChildItems>
+						<UsualGroup name="ПараметрыДействийПользователя" id="6502">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПараметрыДействийПользователяРасширеннаяПодсказка" id="6503"/>
+							<ChildItems>
+								<Button name="РассчитатьДействияПользователя" id="6504">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.РассчитатьДействияПользователя</CommandName>
+									<ExtendedTooltip name="РассчитатьДействияПользователяРасширеннаяПодсказка" id="6505"/>
+								</Button>
+								<InputField name="ДействияПользователяПериод" id="6506">
+									<DataPath>ДействияПользователяПериод</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</Title>
+									<Width>14</Width>
+									<ChoiceButton>true</ChoiceButton>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ДействияПользователяПериодКонтекстноеМеню" id="6507"/>
+									<ExtendedTooltip name="ДействияПользователяПериодРасширеннаяПодсказка" id="6508"/>
+									<Events>
+										<Event name="StartChoice">ДействияПользователяПериодНачалоВыбора</Event><Event name="OnChange">ДействияПользователяПериодПриИзменении</Event>
+									</Events>
+								<AutoMaxWidth>false</AutoMaxWidth><MaxWidth>14</MaxWidth><HorizontalStretch>false</HorizontalStretch></InputField>
+								<InputField name="ПользовательДействий" id="6509">
+									<DataPath>ПользовательДействий</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<Width>28</Width>
+									<DropListButton>true</DropListButton>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>false</ListChoiceMode>
+									<TextEdit>true</TextEdit>
+									<ContextMenu name="ПользовательДействийКонтекстноеМеню" id="6510"/>
+									<ExtendedTooltip name="ПользовательДействийРасширеннаяПодсказка" id="6511"/>
+								<Events><Event name="AutoComplete">ПользовательДействийАвтоПодбор</Event><Event name="TextEditEnd">ПользовательДействийОкончаниеВводаТекста</Event><Event name="ChoiceProcessing">ПользовательДействийОбработкаВыбора</Event><Event name="OnChange">ПользовательДействийПриИзменении</Event></Events><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>28</MaxWidth><HorizontalStretch>false</HorizontalStretch><TitleLocation>None</TitleLocation><InputHint><v8:item><v8:lang>ru</v8:lang><v8:content>Все пользователи</v8:content></v8:item></InputHint></InputField>
+							<InputField name="ВидДействийПользователя" id="6512"><DataPath>ВидДействийПользователя</DataPath><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Представление</v8:content></v8:item></Title><DropListButton>true</DropListButton><ListChoiceMode>true</ListChoiceMode><TextEdit>false</TextEdit><Events><Event name="OnChange">ВидДействийПользователяПриИзменении</Event></Events><Width>17</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>17</MaxWidth><HorizontalStretch>false</HorizontalStretch></InputField><InputField name="ПоказательДействийПользователя" id="6814"><DataPath>ПоказательДействийПользователя</DataPath><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Показатель</v8:content></v8:item></Title><Width>12</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>12</MaxWidth><HorizontalStretch>false</HorizontalStretch><DropListButton>true</DropListButton><ListChoiceMode>true</ListChoiceMode><TextEdit>false</TextEdit><Events><Event name="OnChange">ПоказательДействийПользователяПриИзменении</Event></Events></InputField><InputField name="ДниДействийПользователя" id="6810"><DataPath>ДниДействийПользователя</DataPath><Visible>false</Visible><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Дни</v8:content></v8:item></Title><Width>12</Width><AutoMaxWidth>false</AutoMaxWidth><MaxWidth>12</MaxWidth><HorizontalStretch>false</HorizontalStretch><DropListButton>true</DropListButton><ListChoiceMode>true</ListChoiceMode><TextEdit>false</TextEdit><Events><Event name="OnChange">ДниДействийПользователяПриИзменении</Event></Events></InputField>
+<LabelDecoration name="КалендарныеДниДействий" id="6811"><Visible>false</Visible><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Календарные дни</v8:content></v8:item></Title></LabelDecoration></ChildItems>
+						</UsualGroup>
+						<HTMLDocumentField name="HTMLДействийПользователя" id="6513">
+							<DataPath>HTMLДействийПользователя</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="HTMLДействийПользователяКонтекстноеМеню" id="6514"/>
+							<ExtendedTooltip name="HTMLДействийПользователяРасширеннаяПодсказка" id="6515"/>
+						<Events><Event name="DocumentComplete">HTMLДействийПользователяДокументСформирован</Event></Events></HTMLDocumentField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
 		</Pages>
-		<UsualGroup name="Подвал" id="343">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Подвал</v8:content>
-				</v8:item>
-			</Title>
-			<Group>AlwaysHorizontal</Group>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="344"/>
-			<ChildItems>
-				<CheckBoxField name="ПоказыватьНедействительныхПользователей" id="98">
-					<DataPath>ПоказыватьНедействительныхПользователей</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПоказыватьНедействительныхПользователейКонтекстноеМеню" id="99"/>
-					<ExtendedTooltip name="ПоказыватьНедействительныхПользователейРасширеннаяПодсказка" id="100"/>
-					<Events>
-						<Event name="OnChange">ПоказыватьНедействительныхПользователейПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
-				<InputField name="КодРазрешения" id="340">
-					<DataPath>КодРазрешения</DataPath>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Параметр запуска 1С</v8:content>
-						</v8:item>
-					</ToolTip>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>10</MaxWidth>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="341"/>
-					<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="342"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-	</ChildItems>
+		</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
@@ -666,8 +1161,8 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>~СписокПользователей.ИдентификаторПользователяИБ</Field>
-				<Field>~СписокПользователей.Ссылка</Field>
+				<Field>СписокПользователей.ИдентификаторПользователяИБ</Field>
+				<Field>СписокПользователей.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -709,50 +1204,6 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Показывать недействительных пользователей</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ЕстьПользователиСПустымПаролем" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Есть пользователи с пустым паролем</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ЕстьПользователиСПустымПаролемИПолнымиПравами" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Есть пользователи с пустым паролем</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ОтборПустойПарольСАвторизацией" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Пустой пароль с авторизацией</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ОтборПолныеПрава" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Полные права</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -877,17 +1328,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ОтборБезПрав" id="21">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Без прав</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="КодРазрешения" id="22">
 			<Title>
 				<v8:item>
@@ -973,6 +1413,749 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПредставлениеАудита" id="1126">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКритическогоЗначка" id="1127">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресЗначкаВнимания" id="1128">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеПорядкаПодробногоСписка" id="7540">
+			<Type><v8:Type>xs:string</v8:Type></Type>
+		</Attribute>
+		<Attribute name="НаправлениеПорядкаПодробногоСписка" id="7541">
+			<Type><v8:Type>xs:string</v8:Type></Type>
+		</Attribute>
+		<Attribute name="ЗаголовокКолонкиПодробногоПорядка" id="7542">
+			<Type><v8:Type>xs:string</v8:Type></Type>
+		</Attribute>
+		<Attribute name="КолонкаПодробногоПорядка" id="7543">
+			<Type><v8:Type>xs:string</v8:Type></Type>
+		</Attribute>
+		<Attribute name="ПорядокАудита" id="1138">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрогрессПроверкиПаролей" id="2000">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаПаролейАктивна" id="2001">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РабочийСписок" id="3001">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПолноеИмя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АутентификацияOpenID" id="3">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АутентификацияOpenIDConnect" id="4">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АутентификацияОС" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вход ОС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АутентификацияСтандартная" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вход 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НайденПользовательИБ" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найден в ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПарольУстановлен" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль установлен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоказыватьВСпискеВыбора" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виден при входе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьПолныеПрава" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полные права</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПользовательБСП" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карточка БСП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Недействителен" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Недействителен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторПользователяИБ" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПользовательОС" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учётная запись ОС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НетНикакихПрав" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нет ролей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Замечания" id="16">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УровеньЗамечаний" id="17">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеПрав" id="18">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользователяБСП" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя в БСП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяФизическогоЛица" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО физлица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнейАктивности" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последняя активность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусПроверкиАктивности" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность активности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьАдминистративныеПрава" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Административные права</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоследнийВходВДнях" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последний вход, дн</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДнейПослеАктивности" id="25">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>8</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредупреждениеАктивности" id="26">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КритическиеЗамечания" id="27">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТребуетВнимания" id="28">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьЗамечания" id="29">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КартинкаЗамечаний" id="30">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КартинкаАктивности" id="31">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоРолей" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ролей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>8</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокРолей" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначенные роли</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУстановкиПароля" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль изменён</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаленияБСП" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления БСП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФизическоеЛицо" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физическое лицо</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="АутентификацияТокеномДоступа" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вход по токену</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьДатаАктивности" id="38">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АутентификацияQRКодом" id="39">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АутентификацияЧерезЭлектроннуюПочту" id="40">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПарольНеСоответствуетТребованиям" id="41">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПроверкаТребованийПароляДоступна" id="42">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Действие" id="43">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодДействия" id="44">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выбрана" id="99">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			<Column name="ДругиеЗамечания" id="100"><Type><v8:Type>xs:string</v8:Type></Type></Column>
+				<Column name="ПрочаяАктивность" id="7505">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КатегорииПроблем" id="3002">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Название" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Раздел" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значок" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КатегорияАудита" id="3003">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискАудита" id="3004">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресПодтвержденийПаролей" id="3005">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HTMLРабочееМесто" id="3501">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПредставленияАудита" id="3502">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктивностьДатаНачала" id="4001">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктивностьДатаОкончания" id="4002">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктивностьВыполняется" id="4003">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрогрессАктивности" id="4004">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HTMLАктивности" id="4005">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатДействия" id="5000">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктивностьПериод" id="5001">
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбщийАудитВыполнен" id="6100">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РекомендацияВыполняется" id="6101">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияРекомендаций" id="6102">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусыРекомендаций" id="6104">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Текст" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АктивностьПользователь" id="6200">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -994,77 +2177,58 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДекорПраво2</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ЕстьПользователиСПустымПаролем</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ActivityColor</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДекорПраво3</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ЕстьПользователиСПустымПаролемИПолнымиПравами</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>РезультатАудитаПользователей</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.АудитПользователей.Недействителен</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#A9A9A9</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
+			
 		</ConditionalAppearance>
+	<Attribute name="ПериодичностьАктивности" id="6331"><Type><v8:Type>xs:decimal</v8:Type></Type></Attribute><Attribute name="АдресГрафикаАктивности" id="6332"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="АдресЗначкаРекомендаций" id="6333"><Type><v8:Type>xs:string</v8:Type></Type></Attribute>		<Attribute name="ДействияПользователяПериод" id="6516">
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательДействий" id="6517">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HTMLДействийПользователя" id="6518">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресГрафикаДействий" id="6519">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидДействийПользователя" id="6520">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасчетДействийПользователя" id="6521">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+<Attribute name="ПорогНеактивности" id="6657"><Type><v8:Type>xs:decimal</v8:Type></Type></Attribute><Attribute name="ПоказыватьПустыеКатегории" id="6658"><Type><v8:Type>xs:boolean</v8:Type></Type></Attribute><Attribute name="КэшПользователейДействий" id="6659"><Type><v8:Type>v8:ValueList</v8:Type></Type></Attribute><Attribute name="ИдентификаторПользователяДействий" id="6800"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="ИдентификаторПользователяАктивности" id="6801"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="ДниДействийПользователя" id="6810"><Type><v8:Type>xs:decimal</v8:Type></Type></Attribute><Attribute name="РабочиеДниДействийДоступны" id="6811"><Type><v8:Type>xs:boolean</v8:Type></Type></Attribute><Attribute name="ПоказательДействийПользователя" id="6815"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="АдресРезультатаАудита" id="7130"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="АдресСнимкаАудита" id="7120"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="ПричинаНедоступностиСнимка" id="7121"><Type><v8:Type>xs:string</v8:Type></Type></Attribute><Attribute name="АдресКешаПаролей" id="7131"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute><Attribute name="АдресМаршрутаОпераций" id="7132"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute><Attribute name="АдресКешаДействий" id="7200"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute><Attribute name="HTMLКатегории" id="7201"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute><Attribute name="АдресКонтекстаФайлаАудита" id="7210"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute><Attribute name="АдресСводкиАктивности" id="7211"><Type><v8:Type>xs:string</v8:Type></Type><SavedData>false</SavedData></Attribute>	<Attribute name="АдресПрочейАктивности" id="7506">
+			<Type><v8:Type>xs:string</v8:Type></Type>
+			<SavedData>false</SavedData>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ЗапуститьПодПользователем" id="1">
@@ -1086,7 +2250,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Произвести аудит пользователей</v8:content>
+					<v8:content>Общий аудит</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1096,36 +2260,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПроизвестиАудитПользователей</Action>
-		</Command>
-		<Command name="УбратьВсехПользователейИзСпискаВыбора" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Скрыть пользователей из результата аудита в списке выбора</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Скрыть пользователей из последнего результата аудита целиком. Отборы таблицы не ограничивают операцию. Перед изменением будет показан список.</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>УбратьВсехПользователейИзСпискаВыбора</Action>
-		</Command>
-		<Command name="ЗаблокироватьВходПользователямБезПароля" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Отключить стандартный вход пользователям без пароля</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Отключить стандартную аутентификацию после проверки текущего пароля для последнего результата аудита целиком. Отборы таблицы не ограничивают операцию. Текущий пользователь и административные учётные записи защищены.</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаблокироватьВходПользователямБезПароля</Action>
 		</Command>
 		<Command name="ПерейтиНаСтраницуАвтора" id="5">
 			<Title>
@@ -1162,20 +2296,98 @@
 			</ToolTip>
 			<Action>СкопироватьПраваОт</Action>
 		</Command>
-		<Command name="СделатьНедействительнымиВыделенные" id="7">
+		<Command name="РассчитатьПрочуюАктивность" id="7500">
+			<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Рассчитать прочую активность</v8:content></v8:item></Title>
+			<Action>РассчитатьПрочуюАктивность</Action>
+		</Command>
+		<Command name="СортироватьПрочуюАктивность" id="7508">
+			<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Сортировать по прочей активности</v8:content></v8:item></Title>
+			<Action>СортироватьПрочуюАктивность</Action>
+		</Command>
+		<Command name="СохранитьРезультатАудита" id="1133">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сделать недействительными выделенные</v8:content>
+					<v8:content>Сохранить результат аудита ...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьРезультатАудита</Action>
+		</Command>
+		
+		<Command name="ПроверитьСлабыеПароли" id="2000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аудит паролей</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сделать недействительными выделенные</v8:content>
+					<v8:content>Проверить стандартные пароли: частые пароли, все цифровые строки длиной 1–4, предсказуемые комбинации и варианты имени входа. Пароли не изменяются. Совпавшие варианты временно видны администратору для проверки.</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>СделатьНедействительнымиВыделенные</Action>
+			<Action>ПроверитьСлабыеПароли</Action>
 		</Command>
-	</Commands>
+		<Command name="ОтменитьПроверкуПаролей" id="2001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить проверку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить проверку; подтверждённые находки останутся в замечаниях.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьПроверкуПаролей</Action>
+		</Command>
+		<Command name="РассчитатьАктивность" id="4010">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РассчитатьАктивность</Action>
+		</Command>
+		<Command name="РассчитатьДействияПользователя" id="6522">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РассчитатьДействияПользователя</Action>
+		</Command>
+		<Command name="ОтменитьАктивность" id="4012">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОтменитьАктивность</Action>
+		</Command>
+		<Command name="ВыделитьВсеСтрокиАудита" id="5020">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыделитьВсеСтрокиАудита</Action>
+		</Command>
+		<Command name="СнятьВыделениеСтрокАудита" id="5021">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять выделение со всех</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СнятьВыделениеСтрокАудита</Action>
+		</Command>
+	<Command name="ПереключитьИнтерфейсСписка" id="6301"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Переключить вид списка на подробный с технической информацией</v8:content></v8:item></Title><Action>ПереключитьИнтерфейсСписка</Action></Command><Command name="ОтключитьВходВыбранным" id="7300"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Отключить стандартный вход</v8:content></v8:item></Title><Action>ОтключитьВходВыбранным</Action></Command><Command name="ПотребоватьПарольВыбранным" id="6310"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Потребовать новый пароль</v8:content></v8:item></Title><Action>ПотребоватьПарольВыбранным</Action></Command><Command name="ЗаблокироватьВыбранных" id="6311"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Заблокировать</v8:content></v8:item></Title><Action>ЗаблокироватьВыбранных</Action></Command><Command name="НедействительныВыбранные" id="6312"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Сделать недействительным</v8:content></v8:item></Title><Action>НедействительныВыбранные</Action></Command><Command name="БлокироватьНеактивныхВыбранных" id="6710"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Заблокировать и сделать недействительными</v8:content></v8:item></Title><Action>БлокироватьНеактивныхВыбранных</Action></Command><Command name="ИзменитьПорогНеактивности" id="6711"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Изменить количество дней</v8:content></v8:item></Title><Action>ИзменитьПорогНеактивности</Action></Command><Command name="СравнитьСоСнимком" id="7111"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Сравнить с прошлым аудитом ...</v8:content></v8:item></Title><Action>СравнитьСоСнимком</Action></Command></Commands>
 </Form>
