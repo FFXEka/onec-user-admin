@@ -9,3 +9,7 @@
 [Условия, опубликованные фирмой «1С»](https://v8.1c.ru/news/vyshla-novaya-versiya-3-1-2-603-tipovoy-konfiguratsii-biblioteka-standartnykh-podsistem-redaktsiya-3.htm) · [Текст CC BY 4.0](LICENSES/CC-BY-4.0.md).
 
 Регистрация адаптирована под эту обработку. GPL v3 авторского кода не отменяет указания авторства и условий CC BY 4.0 для материалов БСП.
+
+## SecLists
+
+В проверке слабых паролей используются данные проекта SecLists. В поставку входит текст лицензии MIT с указанием авторства. [Проект SecLists](https://github.com/danielmiessler/SecLists) · [Лицензия в репозитории](LICENSES/SecLists-LICENSE.txt).
